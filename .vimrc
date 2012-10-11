@@ -31,11 +31,6 @@ filetype plugin indent on
 "Set a nice Omnifunc - <CTRL>X <CTRL>O
 set ofu=syntaxcomplete#Complete
 
-"Make javac the build prog - :make
-"You will need to change this per project to account for libs..
-"Choose on of the following for starters
-"YOU MUST start vim from the 'src/' folder. or javac wont work..
-
 "Mapped some FUNCTION keys to be more useful..
 map <F7> :make<Return>:copen<Return>
 map <F8> :cprevious<Return>
@@ -44,11 +39,9 @@ map <F9> :cnext<Return>
 "This is a nice buffer switcher
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
-" These are useful when using MinBufExpl
-" BUT the CTRL+ARROW key mappings are still wrong on Terminal IDE soft Keyboard..
-" This will only work over telnet/ssh . Fix Soon.
-"let g:miniBufExplMapWindowNavVim    = 1
-"let g:miniBufExplMapWindowNavArrows = 1
+" These are useful when using MinBufExpl, use CTRL+ARROW key mappings
+let g:miniBufExplMapWindowNavVim    = 1
+let g:miniBufExplMapWindowNavArrows = 1
 
 "You can change colors easily in vim. 
 "Just type <ESC>:colorscheme and then TAB complete through the options 
