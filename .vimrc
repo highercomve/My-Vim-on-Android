@@ -65,13 +65,6 @@ set background=dark
 :highlight PmenuSbar ctermbg=cyan ctermfg=green
 :highlight PmenuThumb ctermbg=white ctermfg=red
 
-" DICTIONARY
-" The dictioanry can pop up a lot of words when you have Auto popup enabled. 
-" You can disable auto popup, by removing the acp.vim from your ~/.vim/plugin/
-" directory and enable the dictionary here - then use <CTRL>X <CTRL>K to bring
-" up the dictionary options. Or just enable it.. :-)
-"set dictionary+=~/system/etc/dict/words
-
 " Make vim popup behave more like an IDE POPUP
 set completeopt=longest,menuone
 
