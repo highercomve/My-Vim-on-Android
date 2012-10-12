@@ -49,10 +49,15 @@ map <F9> :cnext<Return>
 " These are useful when using MinBufExpl, use CTRL+ARROW key mappings
 " let g:miniBufExplMapWindowNavVim    = 1
 " let g:miniBufExplMapWindowNavArrows = 1
-nmap <silent> <C-Up> :wincmd k<CR>
-nmap <silent> <C-Down> :wincmd j<CR>
-nmap <silent> <C-Left> :wincmd h<CR>
-nmap <silent> <C-Right> :wincmd l<CR>
+noremap <C-J> <C-W>h
+noremap <C-L> <C-W>l
+noremap <C-I> <C-W>j
+noremap <C-K> <C-W>k
+
+noremap <C-Down>  <C-W>j
+noremap <C-Up>    <C-W>k
+noremap <C-Left>  <C-W>h
+noremap <C-Right> <C-W>l
 
 "You can change colors easily in vim. 
 "Just type <ESC>:colorscheme and then TAB complete through the options 
