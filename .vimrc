@@ -51,10 +51,10 @@ map <F9> :cnext<Return>
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " These are useful when using MinBufExpl, use CTRL+ARROW key mappings
-noremap <C-J> <C-W>h
-noremap <C-L> <C-W>l
-noremap <C-I> <C-W>j
-noremap <C-K> <C-W>k
+map <C-J> <C-W>h
+map <C-L> <C-W>l
+map <C-K> <C-W>j
+map <C-I> <C-W>k
 
 noremap <C-Down>  <C-W>j
 noremap <C-Up>    <C-W>k
