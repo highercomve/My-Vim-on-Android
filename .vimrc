@@ -7,6 +7,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 "The basic settings
+
+set nocompatible
 set nocp
 set ls=2
 set tabstop=2
@@ -25,9 +27,11 @@ set nowrap
 set hidden
 set backspace=indent,eol,start
 set mouse=a
+set ttymouse=xterm2
+behave xterm
+set selectmode=mouse
 set whichwrap=[,],h,l
 set autoindent
-set nocompatible
 
 "Syntax highlighting
 syntax on
@@ -47,8 +51,6 @@ map <F9> :cnext<Return>
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " These are useful when using MinBufExpl, use CTRL+ARROW key mappings
-" let g:miniBufExplMapWindowNavVim    = 1
-" let g:miniBufExplMapWindowNavArrows = 1
 noremap <C-J> <C-W>h
 noremap <C-L> <C-W>l
 noremap <C-I> <C-W>j
@@ -58,6 +60,10 @@ noremap <C-Down>  <C-W>j
 noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
 noremap <C-Right> <C-W>l
+" let g:miniBufExplMapWindowNavVim    = 1
+" let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplCTabSwitchBufs     = 1
+let g:miniBufExplSelTarget          = 1
 
 "You can change colors easily in vim. 
 "Just type <ESC>:colorscheme and then TAB complete through the options 
