@@ -482,9 +482,9 @@ endif
 " compatibility. Eventually this mapping will be removed so
 " please use the newer g:miniBufExplMapWindowNavVim setting.
 if g:miniBufExplMapWindowNavVim || g:miniBufExplMapWindowNav
-  noremap <C-K> <C-W>j
-  noremap <C-I> <C-W>k
-  noremap <C-J> <C-W>h
+  noremap <C-J> <C-W>j
+  noremap <C-K> <C-W>k
+  noremap <C-H> <C-W>h
   noremap <C-L> <C-W>l
 endif
 
@@ -493,10 +493,10 @@ endif
 " then perform the remapping
 "
 if g:miniBufExplMapWindowNavArrows
-  noremap <C-S-Down>  <C-W>j
-  noremap <C-S-Up>    <C-W>k
-  noremap <C-S-Left>  <C-W>h
-  noremap <C-S-Right> <C-W>l
+  noremap <C-Down>  <C-W>j
+  noremap <C-Up>    <C-W>k
+  noremap <C-Left>  <C-W>h
+  noremap <C-Right> <C-W>l
 endif
 
 " If we have enabled <C-TAB> and <C-S-TAB> to switch buffers
