@@ -2,8 +2,10 @@
 set nocp
 set ls=2
 set tabstop=2
-set softtabstop=2 
+"set softtabstop=2 
 set shiftwidth=2
+set noexpandtab
+set smarttab
 set ruler
 set number
 set ignorecase
@@ -21,17 +23,20 @@ behave xterm
 set selectmode=mouse
 set guifont=Monospace\ 12
 set guioptions=aegimLt1T
-set tb=icons,tooltips
-set tbis=small
 set dir=~/.vim/backup/
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup/
+set shell=/bin/bash
 
 "Syntax highlighting
 syntax on
 
 "Yes filetype matter
 filetype plugin indent on
+autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 noexpandtab
+autocmd FileType php setlocal noexpandtab tabstop=4 shiftwidth=4
 
 "Set a nice Omnifunc - <CTRL>X <CTRL>O
 set ofu=syntaxcomplete#Complete
@@ -83,7 +88,7 @@ set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 call pathogen#infect()
-let g:user_zen_expandabbr_key = '<c-z>'
+let g:user_zen_expandabbr_key = '<c-q>'
 
 "start NERDTree on startup..
 "autocmd VimEnter * NERDTree

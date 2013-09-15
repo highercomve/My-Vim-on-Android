@@ -1,7 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/sergio/Desktop/WebRTC/test-webrtc.io'
-let g:netrw_dirhist_2='/home/sergio/Desktop/WebRTC/test-webrtc.io/lib'
-let g:netrw_dirhist_3='/home/sergio'
-let g:netrw_dirhist_4='/home/sergio/Desktop'
-let g:netrw_dirhist_5='/home/sergio/Desktop/escuelaweb'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/sdcard/proyectos/escuelaweb/app/controllers'
+let g:netrw_dirhist_2='/sdcard/proyectos'
+let g:netrw_dirhist_3='/sdcard/proyectos/mercadopago-api'
+let g:netrw_dirhist_4='/sdcard/proyectos/mercadopago-api/spec'
